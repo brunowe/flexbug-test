@@ -1,16 +1,15 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React from 'react';
+import './App.css';
 
-function App() {
+import FlexNavbar from './components/FlexNavbar';
+import FlexFooter from './components/FlexFooter';
+
+export default function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>OLÁ MUNDO!</p>
-      </header>
-    </div>
+    <>
+      <FlexNavbar />
+      {props.children}
+      <FlexFooter />
+    </>
   );
 }
-
-export default App;
