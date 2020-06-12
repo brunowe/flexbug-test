@@ -23,16 +23,20 @@ export const Container = styled(Link)`
   }
 `;
 
-export const Img = styled.img`
-  width: 62px;
-  height: 62px;
+export const Img = styled.div`
+  padding: 0px 0px 0px 0px;
   border-radius: calc(0.25rem - 1px);
-  border: 1px solid #eeeeeebb;
+  border: 1px solid #ddd;
 
-  filter: grayscale(1);
+  img {
+    width: 62px;
+    height: 62px;
 
-  &:hover {
-    filter: grayscale(1) sepia(0.75) hue-rotate(25deg);
+    filter: grayscale(1);
+
+    &:hover {
+      filter: grayscale(1) sepia(0.75) hue-rotate(25deg);
+    }
   }
 `;
 

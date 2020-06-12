@@ -5,7 +5,10 @@ import { Container, Img, Body, Title } from './styles';
 export default function CentralCard01(props) {
   return (
     <Container to={props.route}>
-      <Img src={props.imgSrc} alt={props.imgAlt} />
+      <Img>
+        <img src={props.imgSrc} alt={props.imgAlt} />
+      </Img>
+
       <Body>
         <Title>{props.title}</Title>
       </Body>
